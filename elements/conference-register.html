@@ -1,0 +1,26 @@
+<dom-module id="conference-register">
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+      }
+    </style>
+    <form is="iron-form" id="form" method="post" action="/form/handler">
+      <paper-input name="name" label="Your name"></paper-input>
+      <vaadin-date-picker label="Birthday"></vaadin-date-picker>
+      <vaadin-combo-box label="Conference pass" id="conferencePass"></vaadin-combo-box>
+      <vaadin-upload max-files="1" accept="image/*"></vaadin-upload>
+    </form>
+  </template>
+  <script>
+    Polymer({
+      is: 'conference-register',
+      attached: function() {
+        this._setComboboxItems();
+      },
+      _setComboboxItems: function() {
+        this.$.conferencePass.items = ['1 day', '2 day', '3 day'];
+      }
+    });
+  </script>
+</dom-module>
