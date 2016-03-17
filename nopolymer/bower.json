@@ -1,0 +1,21 @@
+{
+  "name": "nopolymer",
+  "homepage": "https://github.com/samiheikki/elements-dogfood-04-03-2016",
+  "authors": [
+    "Sami Suo-Heikki <samiheikki@vaadin.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-material-design": "^0.5.9"
+  }
+}

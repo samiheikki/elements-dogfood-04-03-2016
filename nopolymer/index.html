@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Conference with no Polymer</title>
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- jQuery -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  <!-- Bootstrap Material Design -->
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+  <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+  <script src="https://cdn.vaadin.com/vaadin-core-elements/latest/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="https://cdn-origin.vaadin.com/vaadin-core-elements/master/vaadin-date-picker/vaadin-date-picker.html">
+  <link rel="import" href="https://cdn-origin.vaadin.com/vaadin-core-elements/master/vaadin-upload/vaadin-upload.html">
+  <link rel="import" href="https://cdn-origin.vaadin.com/vaadin-core-elements/master/vaadin-combo-box/vaadin-combo-box.html">
+  <style>
+    .well {
+      background-color: #FFFFFF;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+      <div class="well bs-component">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Fill in and register to my awesome dogfood eating competition</legend>
+            <div class="form-group">
+              <label for="inputEmail" class="col-md-2 control-label">Email</label>
+
+              <div class="col-md-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputDatepicker" class="col-md-2 control-label">Select your birthday</label>
+
+              <div class="col-md-10">
+                <vaadin-date-picker id="inputDatepicker" label="Birthday"></vaadin-date-picker>
+              </div>
+            </div>
+            <div class="form-group" style="margin-top: 0;">
+              <!-- inline style is just to demo custom css to put checkbox below input above -->
+              <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Checkbox
+                  </label>
+                  <label>
+                    <input type="checkbox" disabled=""> Disabled Checkbox
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2 col-md-10">
+                <div class="togglebutton">
+                  <label>
+                    <input type="checkbox" checked=""> Toggle button
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputFile" class="col-md-2 control-label">File</label>
+
+              <div class="col-md-10">
+                <vaadin-upload></vaadin-upload>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="textArea" class="col-md-2 control-label">Textarea</label>
+
+              <div class="col-md-10">
+                <textarea class="form-control" rows="3" id="textArea"></textarea>
+                <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label">Radios</label>
+
+              <div class="col-md-10">
+                <div class="radio radio-primary">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Option one is this
+                  </label>
+                </div>
+                <div class="radio radio-primary">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option two can be something else
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select111" class="col-md-2 control-label">Select</label>
+
+              <div class="col-md-10">
+                <select id="select111" class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select222" class="col-md-2 control-label">Select Multiple</label>
+
+              <div class="col-md-10">
+                <select id="select222" multiple="" class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-10 col-md-offset-2">
+                <button type="button" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+    </div>
+  </div>
+  <script>
+    $.material.init();
+  </script>
+</body>
+
+</html>

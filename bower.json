@@ -23,6 +23,8 @@
     "vaadin-grid": "^1.0.0",
     "vaadin-combo-box": "^1.0.0-alpha6",
     "vaadin-upload": "^1.0.0-alpha1",
-    "vaadin-date-picker": "^1.0.0-alpha2"
+    "vaadin-date-picker": "^1.0.0-alpha2",
+    "bootstrap": "^3.3.6",
+    "bootstrap-material-design": "^0.5.9"
   }
 }
