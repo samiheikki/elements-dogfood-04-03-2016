@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Foundation</title>
+  <link rel="stylesheet" href="bower_components/foundation/css/foundation.min.css">
+  <link rel="stylesheet" href="bower_components/foundation/css/normalize.min.css">
+  <script src="https://cdn.vaadin.com/vaadin-core-elements/latest/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="https://cdn-origin.vaadin.com/vaadin-core-elements/master/vaadin-date-picker/vaadin-date-picker.html">
+  <link rel="import" href="https://cdn-origin.vaadin.com/vaadin-core-elements/master/vaadin-combo-box/vaadin-combo-box.html">
+  <link rel="import" href="https://cdn-origin.vaadin.com/vaadin-core-elements/master/vaadin-upload/vaadin-upload.html">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <style>
+    .log-in-form {
+      border: 1px solid #cacaca;
+      padding: 1rem;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row" style="margin-top:10em;">
+    <div class="medium-6 medium-centered large-4 large-centered columns">
+
+      <form>
+        <div class="row column log-in-form">
+          <h4 class="text-center">Register for my awesome event</h4>
+          <label>Name
+            <input type="text" placeholder="Your name">
+          </label>
+          <vaadin-date-picker label="Birthday"></vaadin-date-picker>
+          <vaadin-combo-box label="Select from combo"></vaadin-combo-box>
+          <vaadin-upload></vaadin-upload>
+          <p><a type="submit" class="button expanded">Log In</a></p>
+          <p class="text-center"><a href="#">Forgot your password?</a></p>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <script>
+    document.querySelector('vaadin-combo-box').items = ['Hi', 'Hello', 'Terve', 'Hej', 'Hejdå', 'Nihao', 'Bonjour'];
+  </script>
+</body>
+
+</html>

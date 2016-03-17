@@ -1,0 +1,22 @@
+{
+  "name": "foundation",
+  "homepage": "https://github.com/samiheikki/elements-dogfood-04-03-2016",
+  "authors": [
+    "Sami Suo-Heikki <samiheikki@vaadin.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "^5.5.3",
+    "vaadin-upload": "^1.0.0-alpha2"
+  }
+}
